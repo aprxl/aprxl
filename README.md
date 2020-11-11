@@ -1,16 +1,17 @@
-### Hi there 👋
+# About me
 
-<!--
-**aprxl/aprxl** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Hello, my name is April and I am an 17 year old male amateur programmer. Most of my work is directed towards game cheating, in the form of extensions (aka "scripts") for 
+cheating softwares such as Onetap, Gamesense, Aimware and others. My current main language is Javascript, although I can also program in C/C++, Java and Lua.
 
-Here are some ideas to get you started:
+## Contact me
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+You can contact me via:
+
+- **Discord**: *april#0001*
+- **Twitter**: *@aprxlu*
+- **Steam**: *[/id/dummie2_](https://steamcommunity.com/id/dummie2_/)*
+- **Onetap**: *[realapril](https://www.onetap.com/members/realapril.3965/)*
+
+## Repositories
+
+All my public work related to scripting can be found **[here](https://github.com/aprxl/scripting)**.

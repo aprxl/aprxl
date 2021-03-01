@@ -1,7 +1,6 @@
 # About me
 
-Hello, my name is April and I am an 17 year old male amateur programmer. Most of my work is directed towards game cheating, in the form of extensions (aka "scripts") for 
-cheating softwares such as Onetap, Gamesense, Aimware and others. My current main language is Javascript, although I can also program in C/C++, Java and Lua.
+Hello, my name is April and I am an 17 year old enthusiastic programmer. Most of my work is directed towards game cheating and exploiting, tho I also tend to work on other web-related and miscellaneous projects. My current main language is Javascript/Node and I'm currently looking into becoming better at C/C++. I can also make use of other languages such as Java, Lua and AngelScript.
 
 ## Contact me
 
@@ -9,7 +8,7 @@ You can contact me via:
 
 - **Discord**: *april#0001*
 - **Twitter**: *@aprxlu*
-- **Steam**: *[/id/dummie2_](https://steamcommunity.com/id/dummie2_/)*
+- **Steam**: *[/id/wrfu](https://steamcommunity.com/id/wrfu/)*
 - **Onetap**: *[realapril](https://www.onetap.com/members/realapril.3965/)*
 
 ## Repositories

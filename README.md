@@ -1,6 +1,6 @@
 # About me
 
-Hello, my name is April and I am an 17 year old enthusiastic programmer. Most of my work is directed towards game cheating and exploiting, tho I also tend to work on other web-related and miscellaneous projects. My current main language is Javascript/Node and I'm currently looking into becoming better at C/C++. I can also make use of other languages such as Java, Lua and AngelScript.
+Hello, my name is April and I am an 18 year old enthusiastic programmer. Most of my work is directed towards game cheating and exploiting, tho I also tend to work on other web-related and miscellaneous projects. My current main language is Javascript/Node and I'm currently looking into becoming better at C/C++. I can also make use of other languages such as Java, Lua and AngelScript.
 
 ## Contact me
 

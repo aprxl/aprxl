@@ -1,16 +1,22 @@
-# About me
+## About me
+Hi, my name is April and I am a Brazilian 18 year old junior, self-taught developer. I am currently a Software Engineering major at [Universidade de Brasília](https://www.unb.br).
 
-Hello, my name is April and I am an 18 year old enthusiastic programmer. Most of my work is directed towards game cheating and exploiting, tho I also tend to work on other web-related and miscellaneous projects. My current main language is Javascript/Node and I'm currently looking into becoming better at C/C++. I can also make use of other languages such as Java, Lua and AngelScript.
+My main language is Typescript/Javascript (*node.js*) and I'm currently focusing in developing my web development skills with **React** and learning other JS frameworks such as Vue and Angular.
+
+I like to direct my work towards helping other developers and to provide well-documented, open-source code for other users so I can not only improve my own work but also help others learn.
+
+## My system
+I'm currently running Windows 11 w/ an optional ArchLinux dual boot on both my systems. I use the *Windows Terminal* with a custom *Powershell* installation that I spend most of my day on.
+
+My main code editor is *Visual Studio Code* with *VIM* keybinds for better productivity, although I've been considering fully switching to EMACS (of which I'm using to edit this README).
 
 ## Contact me
-
 You can contact me via:
 
+- **Email**: *aprilawu@gmail.com*
 - **Discord**: *april#0001*
-- **Twitter**: *@aprxlu*
-- **Steam**: *[/id/wrfu](https://steamcommunity.com/id/wrfu/)*
-- **Onetap**: *[realapril](https://www.onetap.com/members/realapril.3965/)*
+- **Twitter**: *@uncomfyapril*
 
 ## Repositories
-
-All my public work related to scripting can be found **[here](https://github.com/aprxl/scripting)**.
+- **[scripting](https://github.com/aprxl/scripting)**: All of my work directed towards game scripting/exploiting.
+- **[OnetapJS](https://github.com/aprxl/OnetapJS)**: A JS library to allow users to easily use the [Onetap](https://www.onetap.com) API. Currently reworked to use modern javascript and Promises in the *beta* branch.

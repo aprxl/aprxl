@@ -2,7 +2,7 @@
 Import-Module posh-git
 Import-Module oh-my-posh
 Import-Module Terminal-Icons
-Set-PoshPrompt atomic
+Set-PoshPrompt bubbles
 
 # Auto-complete
 Set-PSReadLineOption -PredictionSource History

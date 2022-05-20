@@ -46,6 +46,7 @@ nmap <Space>bp :bp<CR>
 nmap <Space>qq :qa!<CR>
 nmap <Space>qw :wqa<CR>
 nmap <Space>fP :e $MYVIMRC<CR>
+nmap <Space>gg :LazyGit<CR>
 nmap <Space>tf :Telescope find_files<CR>
 nmap <Space>tg :Telescope live_grep<CR>
 

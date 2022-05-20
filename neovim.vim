@@ -14,6 +14,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kassio/neoterm'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+Plug 'nvim-telescope/telescope.nvim'
 call plug#end()
 
 " Color scheme
@@ -40,9 +41,13 @@ nmap <C-e> :e .<CR>
 nmap <C-n> :NvimTreeToggle<CR>
 nmap <Space>bi :ls<CR>
 nmap <Space>bk :bw<CR>
-nmap <Space>qq :q!<CR>
+nmap <Space>bn :bn<CR>
+nmap <Space>bp :bp<CR>
+nmap <Space>qq :qa!<CR>
 nmap <Space>qw :wqa<CR>
 nmap <Space>fP :e $MYVIMRC<CR>
+nmap <Space>tf :Telescope find_files<CR>
+nmap <Space>tg :Telescope live_grep<CR>
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :

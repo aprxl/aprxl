@@ -1,37 +1,63 @@
-" Vim plug initialization/configuration
+" Vim plug configuration/initialization
 call plug#begin()
 Plug 'neovim/nvim-lspconfig'
 Plug 'jose-elias-alvarez/null-ls.nvim'
 Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'kyazdani42/nvim-tree.lua'
-Plug 'kyazdani42/nvim-web-devicons'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'nvim-lualine/lualine.nvim'
 Plug 'echasnovski/mini.nvim', { 'branch': 'stable' }
-Plug 'kchmck/vim-coffee-script'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'kyazdani42/nvim-web-devicons' 
+Plug 'kyazdani42/nvim-tree.lua'
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'kassio/neoterm'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 call plug#end()
+
+" Color scheme
+let g:dracula_colorterm = 0
+colorscheme dracula
 
 " Tab size
 :set tabstop=2
 :set shiftwidth=2
 :set expandtab
+:set smarttab
 
-" Custom mappings
+" Clipboard
+:set clipboard^=unnamed,unnamedplus
+
+" Allow mouse
+:set mouse=a
+
+" Custom keybindings
 nmap <C-e> :e .<CR>
-nmap <C-N> :NvimTreeToggle<CR>
+nmap <C-n> :NvimTreeToggle<CR>
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
       \   "\<TAB>" 
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+" Bufferline configuration
+set termguicolors
+lua << EOF
+require("bufferline").setup{}
+EOF
 
 " Lua line configuration
 lua << EOF
 require('lualine').setup()
 EOF
 
+" Auto-pairs configuration
+lua << EOF
+require('mini.pairs').setup()
+EOF
+
 " Tree configuration
+au BufEnter * :NvimTreeResize 25
 lua << EOF
 require('nvim-tree').setup()
 EOF
@@ -92,9 +118,4 @@ null_ls.setup({
     },
     on_attach = on_attach,
 })
-EOF
-
-" Mini pairs setup
-lua << EOF
-require('mini.pairs').setup()
 EOF

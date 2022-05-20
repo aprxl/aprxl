@@ -26,6 +26,9 @@ colorscheme dracula
 :set expandtab
 :set smarttab
 
+" Line numbers
+:set number
+
 " Clipboard
 :set clipboard^=unnamed,unnamedplus
 
@@ -35,6 +38,12 @@ colorscheme dracula
 " Custom keybindings
 nmap <C-e> :e .<CR>
 nmap <C-n> :NvimTreeToggle<CR>
+nmap <Space>bi :ls<CR>
+nmap <Space>bk :bw<CR>
+nmap <Space>qq :q!<CR>
+nmap <Space>qw :wqa<CR>
+nmap <Space>fP :e $MYVIMRC<CR>
+
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
       \   "\<TAB>" 

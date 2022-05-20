@@ -1,8 +1,6 @@
 # Imports
 Import-Module posh-git
-Import-Module oh-my-posh
 Import-Module Terminal-Icons
-Set-PoshPrompt bubbles
 
 # Auto-complete
 Set-PSReadLineOption -PredictionSource History
@@ -17,4 +15,5 @@ function emacsc {
 }
 
 # Run
+oh-my-posh init pwsh --config ~/scoop/apps/oh-my-posh/current/themes/bubbles.omp.json | Invoke-Expression
 clear

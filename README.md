@@ -1,3 +1,5 @@
+> É brasileiro? Cheque o meu README em português [aqui](README.pt-br.md)!
+
 ## About me
 
 Hi, my name is April and I am a _Brazilian_ 18 year old junior, self-taught developer. I am currently a Software Engineering major at [Universidade de Brasília](https://www.unb.br).

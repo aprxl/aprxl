@@ -19,6 +19,7 @@ You can contact me via:
 - **Email**: *aprilawu@gmail.com*
 - **Discord**: _april#0001_
 - **Twitter**: _@uncomfyapril_
+- **LinkedIn**: _Contact me._
 
 ## Repositories
 

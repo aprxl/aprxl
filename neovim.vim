@@ -1,5 +1,6 @@
 " Vim plug configuration/initialization
 call plug#begin()
+Plug 'williamboman/nvim-lsp-installer'
 Plug 'neovim/nvim-lspconfig'
 Plug 'jose-elias-alvarez/null-ls.nvim'
 Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'
@@ -12,10 +13,12 @@ Plug 'kyazdani42/nvim-tree.lua'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kassio/neoterm'
-Plug 'dracula/vim', { 'as': 'dracula' }
+" Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'savq/melange'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'kdheepak/lazygit.nvim'
+Plug 'github/copilot.vim'
 call plug#end()
 
 " Neovide configuration
@@ -23,11 +26,16 @@ if exists('g:neovide')
   let g:neovide_refresh_rate=144
   let g:neovide_cursor_animation_length=0.05
   let g:neovide_cursor_trail_length=0.2
-en
+endif
 
 " Color scheme
-let g:dracula_colorterm = 0
-colorscheme dracula
+" let g:dracula_colorterm = exists('g:neovide') ? 1 : 0
+" colorscheme dracula
+set termguicolors
+colorscheme melange
+
+" GUI Font
+:set guifont=FiraCode\ Nerd\ Font:14
 
 " Tab size
 :set tabstop=2
@@ -56,7 +64,7 @@ nmap <Space>qq :qa!<CR>
 nmap <Space>qw :wqa<CR>
 nmap <Space>fP :e $MYVIMRC<CR>
 nmap <Space>gg :LazyGit<CR>
-nmap <Space>nt :NvimTreeToggle<CR>
+nmap <Space>op :NvimTreeToggle<CR>
 nmap <Space>tf :Telescope find_files<CR>
 nmap <Space>tg :Telescope live_grep<CR>
 nmap <Space>tb :Telescope buffers<CR>
@@ -86,6 +94,42 @@ EOF
 au BufEnter * :NvimTreeResize 25
 lua << EOF
 require('nvim-tree').setup()
+EOF
+
+" Tree sitter configuration
+lua << EOF
+require'nvim-treesitter.configs'.setup {
+  -- A list of parser names, or "all"
+  ensure_installed = { "c", "lua", "rust" },
+
+  -- Install parsers synchronously (only applied to `ensure_installed`)
+  sync_install = false,
+
+  -- List of parsers to ignore installing (for "all")
+  ignore_install = { "javascript" },
+
+  highlight = {
+    -- `false` will disable the whole extension
+    enable = true,
+
+    -- NOTE: these are the names of the parsers and not the filetype. (for example if you want to
+    -- disable highlighting for the `tex` filetype, you need to include `latex` in this list as this is
+    -- the name of the parser)
+    -- list of language that will be disabled
+    disable = { },
+
+    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
+    -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
+    -- Using this option may slow down your editor, and you may see some duplicate highlights.
+    -- Instead of true it can also be a list of languages
+    additional_vim_regex_highlighting = false,
+  },
+}
+EOF
+
+" LSP Installer configuration
+lua << EOF
+require("nvim-lsp-installer").setup({})
 EOF
 
 " LSP configuration
@@ -123,6 +167,7 @@ local on_attach = function(client, bufnr)
         vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()")
     end
 end
+
 lspconfig.tsserver.setup({
     on_attach = function(client, bufnr)
         client.resolved_capabilities.document_formatting = false
@@ -136,6 +181,7 @@ lspconfig.tsserver.setup({
         on_attach(client, bufnr)
     end,
 })
+lspconfig.tailwindcss.setup({})
 null_ls.setup({
     sources = {
         null_ls.builtins.diagnostics.eslint,

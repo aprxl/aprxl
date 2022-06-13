@@ -18,6 +18,13 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'kdheepak/lazygit.nvim'
 call plug#end()
 
+" Neovide configuration
+if exists('g:neovide')
+  let g:neovide_refresh_rate=144
+  let g:neovide_cursor_animation_length=0.05
+  let g:neovide_cursor_trail_length=0.2
+en
+
 " Color scheme
 let g:dracula_colorterm = 0
 colorscheme dracula

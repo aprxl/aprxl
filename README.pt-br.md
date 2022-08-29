@@ -28,3 +28,5 @@ Você pode me contatar via:
 - **[scripting](https://github.com/aprxl/scripting)**: Todo meu trabalho direcionado a scriptar e manipular jogos online.
 
 - **[OnetapJS](https://github.com/aprxl/OnetapJS)**: Uma livraria em Javascript para facilitar o uso da API do [Onetap](https://www.onetap.com). Recentemente, foi retrabalhada para utilizar Typescript moderno, disponível na branch _beta_.
+
+- **[UNB](https://github.com/aprxl/UNB)**: Todo meu trabalho da faculdade.

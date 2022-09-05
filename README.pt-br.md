@@ -1,6 +1,6 @@
 ## Sobre mim
 
-Olá, meu nome é April, eu tenho 18 anos e eu sou um desenvolvedor junior autodidata brasileiro. Eu atualmente estou cursando Engenharia de Software na [Universidade de Brasília](https://www.unb.br).
+Olá, meu nome é April, eu tenho 19 anos e eu sou um desenvolvedor junior autodidata brasileiro. Eu atualmente estou cursando Engenharia de Software na [Universidade de Brasília](https://www.unb.br).
 
 Minha linguagem de programação preferida é **Typescript/Javascript** (_node.js_) e eu estou focando atualmente em melhorar minhas habilidade de desenvolvimento em **React** e outras frameworks de Javascript.
 

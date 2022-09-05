@@ -2,7 +2,7 @@
 
 ## About me
 
-Hi, my name is April and I am a _Brazilian_ 18 year old junior, self-taught developer. I am currently a Software Engineering major at [Universidade de Brasília](https://www.unb.br).
+Hi, my name is April and I am a _Brazilian_ 19 year old junior, self-taught developer. I am currently a Software Engineering major at [Universidade de Brasília](https://www.unb.br).
 
 My main language is **Typescript/Javascript** (_node.js_) and I'm currently focusing in improving my web development skills with **React** and learning other JS frameworks.
 
